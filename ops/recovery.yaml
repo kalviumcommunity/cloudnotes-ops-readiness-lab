@@ -1,0 +1,3 @@
+backup_dir: data/archive
+rpo_minutes: 0
+rto_seconds: 10
