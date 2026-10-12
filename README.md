@@ -52,12 +52,4 @@ Later checks print `SKIP` until earlier checks print `PASS`: `TASK2 SKIP signals
 
 Record cause, file change, and checker output for each task in `readiness-notes.md`. For Task 1, record all five printed budget numbers, one SLI-versus-SLO sentence, and one negative-budget sentence. For Task 3, write one RPO-versus-RTO sentence using printed values. Commit repairs and notes on `fix/cloudnotes-ops-readiness` and submit your branch URL as directed by your instructor.
 
-## Module mapping
 
-| Task | Lessons sampled | Concepts |
-|---|---|---|
-| 1 | LU 44–47, 54 | Golden signals, local metrics evidence, SLI, SLO, error budget |
-| 2 | LU 46, 48 | Structured logs, error routing, incident evidence |
-| 3 | LU 50–51, 54 | Backup path, restore of acknowledged notes, RPO, RTO |
-
-Security hardening, FinOps, and a full blameless postmortem are outside the timed repair. Written sentences use only numbers the checker prints.
