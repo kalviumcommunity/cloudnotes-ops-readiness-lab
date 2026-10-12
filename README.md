@@ -1,0 +1,1 @@
+# cloudnotes-ops-readiness-lab
