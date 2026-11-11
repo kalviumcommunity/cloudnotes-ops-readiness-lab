@@ -48,8 +48,8 @@ python3 readiness.py recovery
 2. **Structured logs:** reruns signals first. It reads `ops/logging.yaml` key `level_field`, fetches `/logs`, and requires that field to equal `ERROR` on a `cloudnotes-api` record. On pass it prints an ERROR JSON record and `TASK2 PASS`.
 3. **Backup and restore:** reruns logs first. It reads `ops/recovery.yaml` key `backup_dir`; the resolved directory must match the application backup contract. It writes and restores the backup, verifies acknowledged note IDs, and prints `rpo_minutes=0`, `rto_seconds=10`, `restored_ids=n1,n2,n3`, and `TASK3 PASS`.
 
-Later checks print `SKIP` until earlier checks print `PASS`: `TASK2 SKIP signals not ready` or `TASK3 SKIP logs not ready`. A failed or skipped check exits with status 1; tool failures exit with status 2. Tool failures go to the instructor and are not extra planted faults.
+Later checks print `SKIP` until earlier checks print `PASS`: `TASK2 SKIP signals not ready` or `TASK3 SKIP logs not ready`. A failed or skipped check exits with status 1; tool failures exit with status 2. Resolve tool failures before timing; they are not extra planted faults.
 
-Record cause, file change, and checker output for each task in `readiness-notes.md`. For Task 1, record all five printed budget numbers, one SLI-versus-SLO sentence, and one negative-budget sentence. For Task 3, write one RPO-versus-RTO sentence using printed values. Commit repairs and notes on `fix/cloudnotes-ops-readiness` and submit your branch URL as directed by your instructor.
+Record cause, file change, and checker output for each task in `readiness-notes.md`. For Task 1, record all five printed budget numbers, one SLI-versus-SLO sentence, and one negative-budget sentence. For Task 3, write one RPO-versus-RTO sentence using printed values. Commit repairs and notes on `fix/cloudnotes-ops-readiness` and submit your branch URL.
 
 
